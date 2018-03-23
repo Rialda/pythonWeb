@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -7,22 +7,15 @@ app = Flask(__name__)
 # @ map a url to a return value
 @app.route('/')
 def index():
-    return 'Landing page'
+    return 'Method used: %s ' % request.method
 
 
-@app.route('/home')
+@app.route('/home', methods=['GET', 'POST'])
 def home():
-    return '<h1> Home Page </h1>'
-
-
-@app.route('/data/<source>')
-def data(source):
-    return "Requesting <i> %s </i> data" % source
-
-
-@app.route('/number/<int:num>')
-def number(num):
-    return "Number is %s " % num
+    if request.method == 'POST':
+        return "POST"
+    else:
+        return "GET"
 
 
 # make sure to start the web server whenever this file is called directly

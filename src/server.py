@@ -6,13 +6,14 @@ app = Flask(__name__)
 # @ signifies a decorator - for wrapping function and modifying it's behavior
 # @ map a url to a return value
 @app.route('/')
-def index():
-    return 'Index'
+@app.route('/<data_source>')
+def index(data_source=None):
+    return render_template("data.html", data_source=data_source)
 
 
-@app.route('/data/<soc_media>')
-def data(soc_media):
-    return render_template("data.html", soc_media=soc_media)
+@app.route('/test')
+def test():
+    return render_template("test.html")
 
 
 # make sure to start the web server whenever this file is called directly

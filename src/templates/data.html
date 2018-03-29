@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Data | {{ soc_media }}</title>
+    <title> Data
+    {% if data_source %}
+        | {{ data_source }}
+        {% endif %}
+
+    </title>
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='data.css') }}"/>
 
 </head>
 <body>
-<h1> Data for {{ soc_media }} </h1>
+
+{% if data_source %}
+<h1> Data: {{ data_source }}</h1>
+
+{% else %}
+<h1> Collection </h1>
+
+{% endif %}
 
 </body>
 </html>

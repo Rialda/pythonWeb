@@ -13,7 +13,8 @@ def index(data_source=None):
 
 @app.route('/test')
 def test():
-    return render_template("test.html")
+    test_list = ["Item1", "Item2", "Item3"]
+    return render_template("test.html", test_list=test_list)
 
 
 # make sure to start the web server whenever this file is called directly

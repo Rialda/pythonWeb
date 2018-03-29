@@ -1,3 +1,21 @@
 h1{
-color: purple;
+text-transform: capitalize;
+}
+title{
+text-transform: capitalize;
+}
+#twitter{
+color: #00aced;
+}
+
+#fb{
+color: blue;
+}
+
+#ig{
+color: darkred;
+}
+
+#google{
+color: green;
 }

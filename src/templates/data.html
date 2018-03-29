@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Data
+    <title>
     {% if data_source %}
-        | {{ data_source }}
+       Data | {{ data_source }}
+        {% else %}
+        Collection
         {% endif %}
 
     </title>
@@ -13,13 +15,28 @@
 </head>
 <body>
 
-{% if data_source %}
-<h1> Data: {{ data_source }}</h1>
+{% if data_source=="Twitter" or data_source=="twitter" %}
+    <h1> Data: <span id="twitter"> {{ data_source }}  </span> </h1>
+    <h2> some content </h2>
+
+{% elif data_source=="Facebook" or data_source=="facebook" %}
+    <h1> Data:  <span id="fb"> {{ data_source }}  </span>  </h1>
+
+{% elif data_source=="Instagram" or data_source=="instagram" %}
+    <h1> Data:  <span id="ig"> {{ data_source }}  </span> </h1>
+
+{% elif data_source=="Google" or data_source=="google" %}
+    <h1> Data:  <span id="google"> {{ data_source }}  </span>  </h1>
 
 {% else %}
-<h1> Collection </h1>
+    <h1> Collection </h1>
 
 {% endif %}
 
+
+
+
+
 </body>
+
 </html>

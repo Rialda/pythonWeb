@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6537dffb-4cd9-4dd3-a04c-3c4b71419f3b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/data.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/data.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.py" afterDir="false" />
     </list>
@@ -15,16 +16,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/static/data.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,6 +60,8 @@
       <list>
         <option value="$PROJECT_DIR$/venv/pyvenv.cfg" />
         <option value="$PROJECT_DIR$/src/server.py" />
+        <option value="$PROJECT_DIR$/src/static/data.css" />
+        <option value="$PROJECT_DIR$/src/templates/data.html" />
       </list>
     </option>
   </component>
@@ -59,7 +87,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -78,6 +108,18 @@
               <item name="app1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="app1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -85,6 +127,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;projecti&#9;null&#9;null&#10;project inter&#9;null&#9;null&#10;flask&#9;null&#9;null&#10;project int&#9;null&#9;null" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -137,12 +180,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18241903" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18241903" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.24322538" side_tool="true" visible="true" weight="0.26923078" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7567746" visible="true" weight="0.26923078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7567746" visible="true" weight="0.26923078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49814913" weight="0.3945268" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -186,7 +229,21 @@
     <entry file="file://$PROJECT_DIR$/src/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/data.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>

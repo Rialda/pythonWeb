@@ -12,7 +12,7 @@ def index():
 
 @app.route('/data/<soc_media>')
 def data(soc_media):
-    return 'Data: %s' % soc_media
+    return render_template("data.html", soc_media=soc_media)
 
 
 # make sure to start the web server whenever this file is called directly

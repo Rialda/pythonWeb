@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -7,17 +7,16 @@ app = Flask(__name__)
 # @ map a url to a return value
 @app.route('/')
 def index():
-    return 'Method used: %s ' % request.method
+    return 'Index'
 
 
-@app.route('/home', methods=['GET', 'POST'])
-def home():
-    if request.method == 'POST':
-        return "POST"
-    else:
-        return "GET"
+@app.route('/data/<soc_media>')
+def data(soc_media):
+    return 'Data: %s' % soc_media
 
 
 # make sure to start the web server whenever this file is called directly
 if __name__ == "__main__":
     app.run(debug=True)
+
+
